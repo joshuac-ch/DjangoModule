@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Usuarios Conectados
+    {% for u in user %}
+        <div class="">
+            <p>{{u.username}}</p>
+            <img src={{u.profile}} style="width: 400px;height: 300px;border-radius: 20px;object-fit: cover;" alt="">
+        </div>
+    {% endfor %}
+</body>
+</html>
