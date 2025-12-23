@@ -1,0 +1,8 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+<form method="post">
+    {% csrf_token%}
+    {{forms}}
+    <button type="submit">enviar</button>
+</form>
+{% endblock %}
